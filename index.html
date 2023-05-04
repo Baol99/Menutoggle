@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/74d6ebe007.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.min.js"></script>
+    <title>Tipos de menu</title>
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img src="img/pullrequest-logo.svg" alt="" />
+      </figure>
+    </header>
+
+    <div class="sandwich" id="icoMenu">
+      <a href="#"><i class="fa-solid fa-bars"></i></a>
+    </div>
+
+    <nav class="menu" id="navMenu">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Empresa</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Ubicacion</a></li>
+        <li><a href="#">Contactanos</a></li>
+      </ul>
+    </nav>
+
+    <section class="cont">
+      <div class="texto">
+        <h3>Creacion de paginas web</h3>
+        <h5>Curso basico de HTML5 y CSS3</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo
+          magni nesciunt dolorem ut? Iste harum, impedit, aliquid cumque, eos
+          inventore dolore expedita qui reiciendis fugit sapiente odio
+          voluptatum earum?
+        </p>
+        <a href="#" id="btnMostrar">Ver</a>
+      </div>
+      <figure id="foto">
+        <img src="img/foto_pullrequest.svg" alt="" />
+      </figure>
+    </section>
+
+    <footer>
+      <p>@pullrequest</p>
+    </footer>
+
+    <script>
+      $("#icoMenu").click(function () {
+        $("#navMenu").slideToggle();
+      });
+
+      $("#btnMostrar").click(function () {
+        $("#foto").toggle();
+      });
+    </script>
+  </body>
+</html>
